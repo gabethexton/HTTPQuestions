@@ -3,33 +3,47 @@
 __URLs__
 
 * Name all of the parts of the url that you can remember.  In your own words describe what they do.
+```protocol, port, domain, path, query, anchor tag```
 * Name the pieces of the following urls:
 	* `https://www.google.com/`
+	```protocol, domain```
 	* `https://workbook.galvanize.com/cohorts/41/learning_experiences/367`
+	```protocol, domain, path```
 	* `http://locahost:5000/animals/puppies?onlycute=1&size=medium#firstpuppy`
+	```protocol, domain, path, query, anchor tag```
 	* `https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error`
+	```protocol, domain, path, anchor tag```
 * Can a server use more than 1 port?
+```Yes```
 * Why is https different than http?
+```S is for Secure```
 * How does a server interpret the following url's query paramter.  What data structure does it create on the server?
 
 ```
 http://locahost:5000/animals?puppies=fido&puppies=max&puppies=moxie
 ```
+```It sees three key value pairs, all keys are puppies and the values are fido, max and moxie. Ummm...```
+
 
 __HTTP Request/Response__
 
 * Name at least 4 http verbs
+```get, post, put, delete```
 * What is each verb useful for in your own words
+```ask for, send to, other send to, trash```
 * What does idempotent mean?
+```do it once, but after that the result will not change.```
 * Name the 5 http status code ranges.  What are they used for in general?
+```1xx - Info, 2xx - Success, 3xx - Redirect, 4xx - Client Error(TYFU), 5xx - Server Error(TIFU)```
 * If a server returns a http status code of 301 and a location of `https://www.google.com/`, what does the browser do?
+```It sends you off to Google!```
 * For the following HTTP headers, decide if the following header is used for requests, responses or both:
-	* Accept
-	* Content-type
-	* User-agent
-	* Set-cookies
-	* Cache-control
-	* Cookie
+	* Accept ```requests```
+	* Content-type ```requests```
+	* User-agent ```both```
+	* Set-cookies ```both```
+	* Cache-control ```both```
+	* Cookie ```both```
 * Is the following a http request or response?  How do you know for each?
 
 ```
@@ -52,21 +66,21 @@ Connection: keep-alive
   <body>
     <main>
       <h1>Student Roster</h1>
-      
+
         <section>
           <h3>Daenerys Targaryen</h3>
           <span>Student Id: nys8fbohl</span>
           <h4>Hobby: Motherhood</h4>
           <img src="https://i.imgur.com/KlycRG5.jpg" alt="Daenerys Targaryen" />
         </section>
-      
+
         <section>
           <h3>Tyrion Lannister</h3>
           <span>Student Id: njehukbohe</span>
           <h4>Hobby: Traveling</h4>
           <img src="https://i.imgur.com/fFMusdC.png" alt="Tyrion Lannister" />
         </section>
-      
+
     </main>
   </body>
 </html>
